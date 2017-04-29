@@ -9,14 +9,7 @@
 	<div class="header center"><img src="../images/header.png" ></div>
 	<div class="content center"><img src="../images/content.png" >
 		<table class="table">
-                <thead>
-                    <tr>
-                        <th>Codigo</th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                    </tr>
-                </thead>
-                <tbody>
+                
                      <?php
                     $servername = "us-cdbr-iron-east-03.cleardb.net";
                     $username = "b74ba3320e82ec";
@@ -36,8 +29,10 @@
                         while($row = $result->fetch_assoc()) {?>
                         <tr>
                         <td><?php echo $row['codigo_servicio']?></td>
-                        <td><?php echo $row['nombre_servicio']?></td>
-                        <td><?php echo $row['descripcion_servicio']?></td>
+                        <td>
+                        	<tr><?php echo $row['nombre_servicio']?></tr>
+                    	    <tr><?php echo $row['descripcion_servicio']?></tr>
+                        </td>
                         </tr>
                        <?php }
                     } else {
@@ -45,7 +40,7 @@
                     }
                     $conn->close();
                    ?>
-                  </tbody>  
+
                </table>
 	</div>
 	<div class="footer center"><img src="../images/footer.png" ></div>	
