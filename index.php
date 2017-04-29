@@ -11,10 +11,9 @@
 		<table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,16 +29,15 @@
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     }
-                    $sql = "SELECT * from empleados";
+                    $sql = "SELECT * from servicios";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while($row = $result->fetch_assoc()) {?>
                         <tr>
-                        <td><?php echo $row['employee_id']?></td>
-                        <td><?php echo $row['first_name']?></td>
-                        <td><?php echo $row['last_name']?></td>
-                        <td><?php echo $row['email']?></td>
+                        <td><?php echo $row['codigo_servicio']?></td>
+                        <td><?php echo $row['nombre_servicio']?></td>
+                        <td><?php echo $row['descripcion_servicio']?></td>
                         </tr>
                        <?php }
                     } else {
@@ -51,16 +49,5 @@
                </table>
 	</div>
 	<div class="footer center"><img src="../images/footer.png" ></div>	
-<!--	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">PHP Starter Application</span>.
-			</td>
-		</tr>
-	</table> -->
 </body>
 </html>
