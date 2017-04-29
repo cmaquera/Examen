@@ -29,10 +29,9 @@
                         while($row = $result->fetch_assoc()) {?>
                         <tr>
 	                        <td><?php echo $row['codigo_servicio']?></td>
-	                        <td>
-	                        	<tr><?php echo $row['nombre_servicio']?></tr>
-								<tr><?php echo $row['descripcion_servicio']?></tr>
-	                        </td>
+                        	<td><?php echo $row['nombre_servicio']?></td>
+							<td><?php echo $row['descripcion_servicio']?></td>
+							<td><?php echo $row['imagen_servicio']?></td>
                         </tr>
                        <?php }
                     } else {
