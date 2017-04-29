@@ -3,11 +3,11 @@
  */
 
 body,html {
-	background-color: #000; width : 100%;
+	background-color: #fff; width : 100%;
 	height: 100%;
 	margin: 0 auto;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	color: #ffffff;
+	color: #313f4a;
 }
 
 a {
@@ -87,3 +87,6 @@ pre {
 	margin: 0;
 }
 
+.center {
+	text-aling: center;
+}
