@@ -28,11 +28,11 @@
                         // output data of each row
                         while($row = $result->fetch_assoc()) {?>
                         <tr>
-                        <td><?php echo $row['codigo_servicio']?></td>
-                        <td>
-                        	<tr><?php echo $row['nombre_servicio']?></tr>
-                    	    <tr><?php echo $row['descripcion_servicio']?></tr>
-                        </td>
+	                        <td><?php echo $row['codigo_servicio']?></td>
+	                        <td>
+	                        	<tr><?php echo $row['nombre_servicio']?></tr>
+								<tr><?php echo $row['descripcion_servicio']?></tr>
+	                        </td>
                         </tr>
                        <?php }
                     } else {
