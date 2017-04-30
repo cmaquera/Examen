@@ -45,9 +45,9 @@
                        
                         
                             
-            		          <div class="row">
-            		              <div class="col-sm-2"><img src="images/ima1.jpg"></img></div>
-            		              <div class="col-sm-8" style="margin-top: 20px;">
+            		          <div class="row" style="margin-top: 20px;">
+            		              <div class="col-sm-2"><img src="<?php echo $row['imagen_servicio']?>" style="width: 50px;"></img></div>
+            		              <div class="col-sm-8">
             		                  <p><strong><?php echo $row['nombre_servicio']?></strong></p>
             		                  <p><?php echo $row['descripcion_servicio']?></p>
             		                  
@@ -93,12 +93,11 @@
                        
                         
                             
-            		          <div class="row">
-            		              <div class="col-sm-2"><img src="images/ima1.jpg"></img></div>
-            		              <div class="col-sm-8" style="margin-top: 20px;">
+            		          <div class="row" style="margin-top: 20px;">
+            		              <div class="col-sm-2"><img src="<?php echo $row['imagen_servicio']?>" style="width: 50px;"></img></div>
+            		              <div class="col-sm-8">
             		                  <p><strong><?php echo $row['nombre_servicio']?></strong></p>
             		                  <p><?php echo $row['descripcion_servicio']?></p>
-            		                  
             		              </div>
             		          </div>
             	      
@@ -115,6 +114,7 @@
     		</div>
         </div>
 	</div>
+	<br>
 	<div class="footer text-center"><img style="width: 100%;" src="../images/footer.png" ></div>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
